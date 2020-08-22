@@ -121,7 +121,7 @@ client.sendBatchMessage(sender, recipients, groupId)
 ```js
 client.messageStatus(groupId)
 	.then((result) => {
-		console.log(result.received, result.status, result.message, result.number);
+		console.log(result[0].received, result[0].status, result[0].message, result[0].number);
 	})
 	.catch((error) => {
 		console.log(error.isHttpException, error.code, error.message);
